@@ -97,8 +97,7 @@ void loop()
 
 // An event is being triggered as soon as the Humidity Value crosses its threshold
   if(humid > 90)
-    Blynk.logEvent("alert", "The Humidity of the Surrounding has increased suddenly!!!");  
-
+    Blynk.logEvent("alert", "The Humidity of the Surrounding has increased suddenly!!!");
 
 // FIRE ALERT
   fire_data = digitalRead(fire_pin);
@@ -109,6 +108,7 @@ void loop()
   {
     Blynk.setProperty(V4,"color","#D3435C");
     led.on();
+    Blynk.logEvent("alert", "A fire has been caught!!!");  // An event is being triggered as soon as Fire has been detected
   }
 
   // Fire is not detected so the LED changes to GREEN
