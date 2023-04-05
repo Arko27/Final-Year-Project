@@ -9,3 +9,5 @@
 <li>Ultrasonic Sensor HC-SR04</li>
 <li>Temperature and Humidity Sensor DHT11</li>
 <li>Inrared Fire Sensor</li>
+<li>Piezo Buzzer</li>
+<li>DC Water Pump</li>
